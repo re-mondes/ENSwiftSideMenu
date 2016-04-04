@@ -20,7 +20,8 @@ Pod::Spec.new do |s|
   s.source_files      = "Library/ENSideMenu.swift", "Library/ENSideMenuNavigationController.swift"
 
   s.subspec 'ImageEffects' do |image_effects|
-  connection.source_files = "Library/ENSideMenuBlurEffect.swift"
-  connection.dependency 'UIImageEffects'
+    connection.source_files = "Library/ENSideMenuBlurEffect.swift"
+    connection.dependency 'UIImageEffects'
+  end
 
 end
