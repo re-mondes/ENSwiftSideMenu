@@ -10,7 +10,6 @@
 		1429137D19D97A4F0025188A /* MyMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429137C19D97A4F0025188A /* MyMenuTableViewController.swift */; };
 		1429139319DA9F4D0025188A /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429139219DA9F4D0025188A /* MyNavigationController.swift */; };
 		14EAB63D19DD4E95006A90FC /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EAB63B19DD4E95006A90FC /* ENSideMenu.swift */; };
-		14EAB63E19DD4E95006A90FC /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EAB63C19DD4E95006A90FC /* ENSideMenuNavigationController.swift */; };
 		5C132589198E2A9A00CA49BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C132588198E2A9A00CA49BE /* AppDelegate.swift */; };
 		5C13258B198E2A9A00CA49BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C13258A198E2A9A00CA49BE /* ViewController.swift */; };
 		5C132590198E2A9A00CA49BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C13258F198E2A9A00CA49BE /* Images.xcassets */; };
@@ -19,7 +18,8 @@
 		5C6D6A271A7E26380047FE0D /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D6A261A7E26380047FE0D /* ViewController2.swift */; };
 		5C7D78C21BAEEEC2002BD24B /* LaunchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C7D78C11BAEEEC2002BD24B /* LaunchView.xib */; };
 		9E4766FC19DDBCE900FCEACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C13258C198E2A9A00CA49BE /* Main.storyboard */; };
-		CEF18D801CB2706400B88BE9 /* ENSideMenuBlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF18D7F1CB2706400B88BE9 /* ENSideMenuBlurEffect.swift */; };
+		CE238F101CB274E3002F8AEE /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE238F0F1CB274E3002F8AEE /* ENSideMenuNavigationController.swift */; };
+		CE238F131CB27502002F8AEE /* ENSideMenuBlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE238F121CB27502002F8AEE /* ENSideMenuBlurEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 		1429137C19D97A4F0025188A /* MyMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMenuTableViewController.swift; sourceTree = "<group>"; };
 		1429139219DA9F4D0025188A /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
 		14EAB63B19DD4E95006A90FC /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
-		14EAB63C19DD4E95006A90FC /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
 		5C132583198E2A9A00CA49BE /* SwiftSideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSideMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C132587198E2A9A00CA49BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C132588198E2A9A00CA49BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +48,8 @@
 		5C1325A7198E2AB300CA49BE /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		5C6D6A261A7E26380047FE0D /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		5C7D78C11BAEEEC2002BD24B /* LaunchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchView.xib; sourceTree = "<group>"; };
-		CEF18D7F1CB2706400B88BE9 /* ENSideMenuBlurEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuBlurEffect.swift; sourceTree = "<group>"; };
+		CE238F0F1CB274E3002F8AEE /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
+		CE238F121CB27502002F8AEE /* ENSideMenuBlurEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuBlurEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +93,8 @@
 		14EAB63A19DD4E95006A90FC /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				CE238F0F1CB274E3002F8AEE /* ENSideMenuNavigationController.swift */,
 				14EAB63B19DD4E95006A90FC /* ENSideMenu.swift */,
-				14EAB63C19DD4E95006A90FC /* ENSideMenuNavigationController.swift */,
-				CEF18D7F1CB2706400B88BE9 /* ENSideMenuBlurEffect.swift */,
 			);
 			name = Library;
 			path = ../../Library;
@@ -122,6 +121,7 @@
 		5C132585198E2A9A00CA49BE /* SwiftSideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				CE238F111CB27502002F8AEE /* BlurEffect */,
 				14EAB63A19DD4E95006A90FC /* Library */,
 				1429137B19D979A50025188A /* Storyboard Example */,
 				5C1325A7198E2AB300CA49BE /* image.png */,
@@ -156,6 +156,15 @@
 				5C13259A198E2A9A00CA49BE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE238F111CB27502002F8AEE /* BlurEffect */ = {
+			isa = PBXGroup;
+			children = (
+				CE238F121CB27502002F8AEE /* ENSideMenuBlurEffect.swift */,
+			);
+			name = BlurEffect;
+			path = ../../BlurEffect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,11 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14EAB63E19DD4E95006A90FC /* ENSideMenuNavigationController.swift in Sources */,
 				5C13258B198E2A9A00CA49BE /* ViewController.swift in Sources */,
 				1429137D19D97A4F0025188A /* MyMenuTableViewController.swift in Sources */,
 				14EAB63D19DD4E95006A90FC /* ENSideMenu.swift in Sources */,
-				CEF18D801CB2706400B88BE9 /* ENSideMenuBlurEffect.swift in Sources */,
+				CE238F101CB274E3002F8AEE /* ENSideMenuNavigationController.swift in Sources */,
+				CE238F131CB27502002F8AEE /* ENSideMenuBlurEffect.swift in Sources */,
 				5C6D6A271A7E26380047FE0D /* ViewController2.swift in Sources */,
 				1429139319DA9F4D0025188A /* MyNavigationController.swift in Sources */,
 				5C132589198E2A9A00CA49BE /* AppDelegate.swift in Sources */,

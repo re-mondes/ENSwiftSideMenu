@@ -19,9 +19,9 @@ Pod::Spec.new do |s|
   s.source   = { :git => "https://github.com/evnaz/ENSwiftSideMenu.git", :tag => "0.1"}
   s.source_files      = "Library/ENSideMenu.swift", "Library/ENSideMenuNavigationController.swift"
 
-  s.subspec 'ImageEffects' do |image_effects|
-    connection.source_files = "Library/ENSideMenuBlurEffect.swift"
-    connection.dependency 'UIImageEffects'
+  s.subspec 'BlurEffect' do |blur_effect|
+    blur_effect.source_files = "BlurEffect/ENSideMenuBlurEffect.swift"
+    blur_effect.dependency 'UIImageEffects'
   end
 
 end
