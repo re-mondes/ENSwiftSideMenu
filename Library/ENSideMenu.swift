@@ -264,16 +264,16 @@ public class ENSideMenu : NSObject, UIGestureRecognizerDelegate {
         
         sourceView.addSubview(sideMenuContainerView)
         
-        if (NSClassFromString("UIVisualEffectView") != nil) {
-            // Add blur view
-            let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: blurStyle)) as UIVisualEffectView
-            visualEffectView.frame = sideMenuContainerView.bounds
-            visualEffectView.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
-            sideMenuContainerView.addSubview(visualEffectView)
-        }
-        else {
-            // TODO: add blur for ios 7
-        }
+//        if (NSClassFromString("UIVisualEffectView") != nil) {
+//            // Add blur view
+//            let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: blurStyle)) as UIVisualEffectView
+//            visualEffectView.frame = sideMenuContainerView.bounds
+//            visualEffectView.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
+//            sideMenuContainerView.addSubview(visualEffectView)
+//        }
+//        else {
+//            // TODO: add blur for ios 7
+//        }
     }
     
     private func toggleMenu (shouldOpen: Bool) {
