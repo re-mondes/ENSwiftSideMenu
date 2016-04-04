@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ENSwiftSideMenu 
 
 class MyNavigationController: ENSideMenuNavigationController, ENSideMenuDelegate {
 
