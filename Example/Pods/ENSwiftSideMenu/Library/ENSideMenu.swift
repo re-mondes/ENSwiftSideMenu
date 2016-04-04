@@ -285,6 +285,12 @@ public class ENSideMenu : NSObject, UIGestureRecognizerDelegate {
         return sideMenuContainerViewImage
     }
     
+    public func addSubviewToSideMenu (view: UIView) {
+        if view.isKindOfClass(ENSideMenuBlurEffect) {
+            sideMenuContainerView.addSubview(view);
+        }
+    }
+    
     private func toggleMenu (shouldOpen: Bool) {
         if (shouldOpen && delegate?.sideMenuShouldOpenSideMenu?() == false) {
             return

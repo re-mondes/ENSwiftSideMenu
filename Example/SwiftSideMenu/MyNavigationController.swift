@@ -18,10 +18,12 @@ class MyNavigationController: ENSideMenuNavigationController, ENSideMenuDelegate
         //sideMenu?.delegate = self //optional
         sideMenu?.menuWidth = 180.0 // optional, default is 160
         
-        var image : UIImage
+        var image = UIImage()
         if let actualSideMenu = sideMenu {
             image = ENSideMenuBlurEffect.blurImage(actualSideMenu)
         }
+        let imageView = UIImageView.init(image: image)
+        sideMenu?.addSubviewToSideMenu(imageView)
     
         //sideMenu?.bouncingEnabled = false
         //sideMenu?.allowPanGesture = false
