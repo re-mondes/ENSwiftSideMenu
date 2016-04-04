@@ -276,15 +276,6 @@ public class ENSideMenu : NSObject, UIGestureRecognizerDelegate {
 //        }
     }
     
-    func imageFromSideMenuView() -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(sideMenuContainerView.bounds.size, sideMenuContainerView.opaque, 0.0)
-        sideMenuContainerView.drawViewHierarchyInRect(sideMenuContainerView.bounds, afterScreenUpdates: false)
-        var sideMenuContainerViewImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        return sideMenuContainerViewImage
-    }
-    
     private func toggleMenu (shouldOpen: Bool) {
         if (shouldOpen && delegate?.sideMenuShouldOpenSideMenu?() == false) {
             return
