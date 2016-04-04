@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.author       = { "Evgeny Nazarov" => "e.nazarov@yahoo.com" }
   s.requires_arc      = true
   s.platform = :ios, "8.0"
-  s.source   = { :git => "https://github.com/evnaz/ENSwiftSideMenu.git", :tag => "0.1"}
+  s.source   = { :git => "https://github.com/re-mondes/ENSwiftSideMenu.git"}
   s.source_files      = "Library/ENSideMenu.swift", "Library/ENSideMenuNavigationController.swift"
 
   s.subspec 'BlurEffect' do |blur_effect|
