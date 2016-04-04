@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ENSwiftSideMenu"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "A simple side menu for iOS 8"
   s.homepage     = "https://github.com/evnaz/ENSwiftSideMenu"
   s.license      = { :type => "MIT", :file => "LICENSE" }

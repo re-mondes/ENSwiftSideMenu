@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ENSwiftSideMenu:
-    :commit: a98db68e7ee96650e9e3aa57d3710bf592995d61
+    :commit: a95478441111d646d575b71b9049c18ba51fa171
     :git: https://github.com/re-mondes/ENSwiftSideMenu.git
 
 SPEC CHECKSUMS:
