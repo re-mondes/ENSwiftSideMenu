@@ -9,14 +9,14 @@
 Pod::Spec.new do |s|
 
   s.name         = "ENSwiftSideMenu"
-  s.version      = "0.1"
+  s.version      = "0.1.1"
   s.summary      = "A simple side menu for iOS 8"
   s.homepage     = "https://github.com/evnaz/ENSwiftSideMenu"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Evgeny Nazarov" => "e.nazarov@yahoo.com" }
   s.requires_arc      = true
   s.platform = :ios, "8.0"
-  s.source   = { :git => "https://github.com/re-mondes/ENSwiftSideMenu.git"}
+  s.source   = { :git => "https://github.com/re-mondes/ENSwiftSideMenu.git", :tag => s.version.to_s}
   s.source_files      = "Library/ENSideMenu.swift", "Library/ENSideMenuNavigationController.swift"
 
   s.subspec 'BlurEffect' do |blur_effect|
