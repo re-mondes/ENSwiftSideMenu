@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import UIImageEffects
+
+public class ENSideMenuBlurEffect : NSObject {
+    
+    public class func blurImage (view: ENSideMenu) -> UIImage {
+        var imageFromMenu = view.imageFromSideMenuView();
+        var tintColor = UIColor.init(white: 0.8, alpha: 0.3)
+        var blurImage = imageFromMenu.applyBlurWithRadius(5.0, tintColor: tintColor, saturationDeltaFactor: 1.8, maskImage: nil)
+        return blurImage
+    }
+    
+}

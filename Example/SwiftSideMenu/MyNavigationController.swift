@@ -17,7 +17,12 @@ class MyNavigationController: ENSideMenuNavigationController, ENSideMenuDelegate
         sideMenu = ENSideMenu(sourceView: self.view, menuViewController: MyMenuTableViewController(), menuPosition:.Left)
         //sideMenu?.delegate = self //optional
         sideMenu?.menuWidth = 180.0 // optional, default is 160
-        var image = ENS
+        
+        var image : UIImage
+        if let actualSideMenu = sideMenu {
+            image = ENSideMenuBlurEffect.blurImage(actualSideMenu)
+        }
+    
         //sideMenu?.bouncingEnabled = false
         //sideMenu?.allowPanGesture = false
         // make navigation bar showing over side menu
