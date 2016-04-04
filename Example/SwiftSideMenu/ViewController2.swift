@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ENSwiftSideMenu
 
 class ViewController2: UIViewController, ENSideMenuDelegate {
 
