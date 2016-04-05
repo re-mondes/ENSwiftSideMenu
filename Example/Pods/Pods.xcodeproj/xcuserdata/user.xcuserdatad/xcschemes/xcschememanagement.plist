@@ -14,25 +14,15 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>UIImageEffects.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>07ED86B05AFBE250B8BEF93E2E32A776</key>
+		<key>002CEA30BA2BB4E126998F1DC78911C8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>733EE3C6837F1BF4D127633BE06CC5BB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C827D0140AC762860BC72917984EABF8</key>
+		<key>5E40B80F0FA7BDA9FBB0AB7DDCD07249</key>
 		<dict>
 			<key>primary</key>
 			<true/>

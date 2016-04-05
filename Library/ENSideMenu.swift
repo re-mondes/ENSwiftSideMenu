@@ -137,6 +137,7 @@ public class ENSideMenu : NSObject, UIGestureRecognizerDelegate {
     public var bouncingEnabled :Bool = true
     /// The duration of the slide animation. Used only when `bouncingEnabled` is FALSE.
     public var animationDuration = 0.4
+    public var pushMagnitude : CGFloat = 100.0
     private let sideMenuContainerView =  UIView()
     private(set) var menuViewController : UIViewController!
     private var animator : UIDynamicAnimator!
@@ -263,26 +264,6 @@ public class ENSideMenu : NSObject, UIGestureRecognizerDelegate {
         sideMenuContainerView.layer.shadowPath = UIBezierPath(rect: sideMenuContainerView.bounds).CGPath
         
         sourceView.addSubview(sideMenuContainerView)
-        
-//        if (NSClassFromString("UIVisualEffectView") != nil) {
-//            // Add blur view
-//            let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: blurStyle)) as UIVisualEffectView
-//            visualEffectView.frame = sideMenuContainerView.bounds
-//            visualEffectView.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
-//            sideMenuContainerView.addSubview(visualEffectView)
-//        }
-//        else {
-//            // TODO: add blur for ios 7
-//        }
-    }
-
-    func imageFromSideMenuView() -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(sideMenuContainerView.bounds.size, sideMenuContainerView.opaque, 0.0)
-        sideMenuContainerView.drawViewHierarchyInRect(sideMenuContainerView.bounds, afterScreenUpdates: false)
-        var sideMenuContainerViewImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        return sideMenuContainerViewImage
     }
     
     private func toggleMenu (shouldOpen: Bool) {
@@ -306,14 +287,14 @@ public class ENSideMenu : NSObject, UIGestureRecognizerDelegate {
             if (menuPosition == .Left) {
                 // Left side menu
                 gravityDirectionX = (shouldOpen) ? 1 : -1
-                pushMagnitude = (shouldOpen) ? 35 : -35
+                pushMagnitude = (shouldOpen) ? self.pushMagnitude : -self.pushMagnitude
                 boundaryPointX = (shouldOpen) ? menuWidth : -menuWidth-2
                 boundaryPointY = 25
             }
             else {
                 // Right side menu
                 gravityDirectionX = (shouldOpen) ? -1 : 1
-                pushMagnitude = (shouldOpen) ? -35 : 35
+                pushMagnitude = (shouldOpen) ? -self.pushMagnitude : self.pushMagnitude
                 boundaryPointX = (shouldOpen) ? width-menuWidth : width+menuWidth+2
                 boundaryPointY =  -25
             }

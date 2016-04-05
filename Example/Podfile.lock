@@ -1,9 +1,5 @@
 PODS:
-  - ENSwiftSideMenu (0.1.2):
-    - ENSwiftSideMenu/BlurEffect (= 0.1.2)
-  - ENSwiftSideMenu/BlurEffect (0.1.2):
-    - UIImageEffects
-  - UIImageEffects (0.0.1)
+  - ENSwiftSideMenu (0.1.3)
 
 DEPENDENCIES:
   - ENSwiftSideMenu (from `https://github.com/re-mondes/ENSwiftSideMenu.git`)
@@ -14,11 +10,10 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ENSwiftSideMenu:
-    :commit: 924898ac13bcc6034fe3fcc759e51fd64b9ea990
+    :commit: 378c5900f4cfad2f47d0a8068f027e0c58b89094
     :git: https://github.com/re-mondes/ENSwiftSideMenu.git
 
 SPEC CHECKSUMS:
-  ENSwiftSideMenu: b0d75922830a0ff191baba0738770a5a7ccec1db
-  UIImageEffects: 37b99fa461e4965f332ca82e92f2c22a1075ee84
+  ENSwiftSideMenu: aab2ad08e3daa82d1d606cef08377b3561cd423d
 
 COCOAPODS: 0.39.0
