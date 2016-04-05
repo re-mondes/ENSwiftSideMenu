@@ -137,6 +137,7 @@ public class ENSideMenu : NSObject, UIGestureRecognizerDelegate {
     public var bouncingEnabled :Bool = true
     /// The duration of the slide animation. Used only when `bouncingEnabled` is FALSE.
     public var animationDuration = 0.4
+    public var pushMagnitude : CGFloat = 100.0
     private let sideMenuContainerView =  UIView()
     private(set) var menuViewController : UIViewController!
     private var animator : UIDynamicAnimator!
@@ -286,14 +287,14 @@ public class ENSideMenu : NSObject, UIGestureRecognizerDelegate {
             if (menuPosition == .Left) {
                 // Left side menu
                 gravityDirectionX = (shouldOpen) ? 1 : -1
-                pushMagnitude = (shouldOpen) ? 35 : -35
+                pushMagnitude = (shouldOpen) ? self.pushMagnitude : -self.pushMagnitude
                 boundaryPointX = (shouldOpen) ? menuWidth : -menuWidth-2
                 boundaryPointY = 25
             }
             else {
                 // Right side menu
                 gravityDirectionX = (shouldOpen) ? -1 : 1
-                pushMagnitude = (shouldOpen) ? -35 : 35
+                pushMagnitude = (shouldOpen) ? -self.pushMagnitude : self.pushMagnitude
                 boundaryPointX = (shouldOpen) ? width-menuWidth : width+menuWidth+2
                 boundaryPointY =  -25
             }
