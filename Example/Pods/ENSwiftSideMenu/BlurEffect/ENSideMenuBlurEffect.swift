@@ -7,3 +7,8 @@
 //
 
 import Foundation
+import UIImageEffects
+
+public class ENSideMenuBlurEffect : NSObject {
+    
+}

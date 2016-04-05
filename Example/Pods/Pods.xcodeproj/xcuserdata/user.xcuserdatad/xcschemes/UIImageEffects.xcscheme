@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3390C118048B67AAA1AE8336'
+               BlueprintIdentifier = 'D65E602A3D268F63CDE39EEF'
                BlueprintName = 'UIImageEffects'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'UIImageEffects.framework'>
